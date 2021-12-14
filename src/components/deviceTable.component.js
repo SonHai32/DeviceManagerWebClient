@@ -158,7 +158,8 @@ export default connect(
           <th scope="row">{index + 1}</th>
           <td>{item.deviceId}</td>
           <td>{item.deviceName}</td>
-          <td>{item.deviceAmount}</td>
+          <td>{item.deviceQuantity}</td>
+          <td>{item.devicePrice}</td>
           <td>
             <div className="d-flex align-items-center w-100 justify-content-center">
               <Button
@@ -214,6 +215,7 @@ export default connect(
                       <th scope="col">Device ID</th>
                       <th scope="col">Device Name</th>
                       <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
                       <th scope="col">Actions</th>
                     </tr>
                   </thead>
